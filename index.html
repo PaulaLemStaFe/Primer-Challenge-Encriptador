@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Primer Challenge Oracle + Alura LATAM</title>
 </head>
 <body>
+
+    <h1 class="titulo_principal">Código Secreto</h1>
+    <section class="formularios">
+        <div class="form_encriptar">
+            <label for="input-texto"><h2>Ingrese el texto a encriptar</h2></label>
+            <textarea id="campo1" name="textarea" rows="10" cols="50" onchange="this.value=this.value.toLowerCase();" placeholder="solo letras minusculas, sin acento ni caracteres especiales..."></textarea>
+            <br>
+            <button class="btn_1" onclick="btnEncriptar()">Encriptar!</button>
+            <button class="btn_2" onclick="btnDesEncriptar()">Desencriptar!</button>
+        </div>
     
+        <div class="form-desencriptar">
+            <label for="output-texto"><h2 id="titulo-desencriptar">Mensaje encriptado</h2></label>
+            <textarea id="campo2" name="textarea" rows="10" cols="50" onchange="this.value=this.value.toLowerCase();" placeholder="escriba algo aqui..."></textarea>
+            <br>
+            <button class="btn_1" onclick="btnCopiar()">Copiar!</button>
+            <button class="btn_2" onclick="btnPegar()">Copiar y Pegar!</button>
+        </div>
+    </section>
+
+    <footer class="derechos">
+        <p>Todos los derechos reservados | © 2022 María Paula Lemos</p>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>

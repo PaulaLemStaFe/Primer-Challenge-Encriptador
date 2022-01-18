@@ -1,9 +1,84 @@
+* {
+    box-sizing: border-box;
+  }
+
 body {
     width: 100%;
-    max-width: 1400px;
     display: block;
-    margin: auto;
-    min-height: 100vh;
-    background: #191919;
+    margin: 0;
+    min-height: 93vh;
+    background: #4fdb9a;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(139, 16, 196);
+    text-shadow: #444343 0 0 .09em;
+}
+
+.titulo_principal {
+    color: rgb(139, 16, 196);
+    font-size: 70px;
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+}
+
+.formularios {
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1 200px;
+}
+
+.form_encriptar,
+.form-desencriptar {
+    margin: 20px;
+}
+
+#campo1, #campo2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: rgb(95, 14, 133);
+    background-color: #ade9cd;
+    border: 3px solid rgb(95, 14, 133);
+}
+
+.formularios button {
+    align-items: center;
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+    margin-top: 10px;
+    /*background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(139, 16, 196)), to(#4fdb9a));
+    background-image: -moz-linear-gradient(top left 90deg, rgb(139, 16, 196) 0%, #4fdb9a 100%);
+    background-image: linear-gradient(top left 90deg, rgb(139, 16, 196) 0%, #4fdb9a 100%);*/
+    box-shadow: 20px 0px 30px -5px #5a5959;
+    border: 2px solid rgb(95, 14, 133);
+    background-color: rgb(95, 14, 133);
+    color: #4fdb9a;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.formularios label {
+    text-align: center;
+}
+
+.btn_1 {
+    margin-left: 100px;
+}
+
+.btn_2 {
+    margin-left: 10px;
+}
+
+.derechos {
+    padding: 5px 5px 5px 5px;
+    background-color: rgb(95, 14, 133);
+    color: #4fdb9a;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    bottom: 0;
 }
