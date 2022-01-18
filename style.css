@@ -35,7 +35,7 @@ body {
     margin: 20px;
 }
 
-#campo1, #campo2 {
+#entrada_texto, #salida_texto {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
     color: rgb(95, 14, 133);
@@ -48,9 +48,6 @@ body {
     border-radius: 20px;
     padding: 5px 5px 5px 5px;
     margin-top: 10px;
-    /*background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(139, 16, 196)), to(#4fdb9a));
-    background-image: -moz-linear-gradient(top left 90deg, rgb(139, 16, 196) 0%, #4fdb9a 100%);
-    background-image: linear-gradient(top left 90deg, rgb(139, 16, 196) 0%, #4fdb9a 100%);*/
     box-shadow: 20px 0px 30px -5px #5a5959;
     border: 2px solid rgb(95, 14, 133);
     background-color: rgb(95, 14, 133);
@@ -64,11 +61,11 @@ body {
     text-align: center;
 }
 
-.btn_1 {
+.boton_izquierdo {
     margin-left: 100px;
 }
 
-.btn_2 {
+.boton_derecho {
     margin-left: 10px;
 }
 

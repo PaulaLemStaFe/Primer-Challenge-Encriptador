@@ -1,26 +1,26 @@
-function btnCopiar(){
-    const copyText = document.getElementById("campo2");
+function botonCopiar(){
+    const copyText = document.getElementById("salida_texto");
     copyText.select();
     document.execCommand("Copy");
-    document.getElementById("campo2").value=" ";
+    document.getElementById("salida_texto").value=" ";
 }
 
-function btnPegar(){
-    document.getElementById("campo1").value = document.getElementById("campo2").value;
-    document.getElementById("campo2").value=" ";
+function botonPegar(){
+    document.getElementById("entrada_texto").value = document.getElementById("salida_texto").value;
+    document.getElementById("salida_texto").value=" ";
 }
 
-function btnEncriptar(){
-        const encriptar = document.getElementById('campo1').value;
+function botonEncriptar(){
+        const encriptar = document.getElementById('entrada_texto').value;
         const encriptado = encriptar.replace(/e/gi, 'enter').replace(/i/gi, 'imes').replace(/a/gi, 'ai').replace(/o/gi, 'ober').replace(/u/gi, 'ufat');
-        document.getElementById("campo2").value = encriptado
-        document.getElementById("campo1").value=" ";
+        document.getElementById("salida_texto").value = encriptado
+        document.getElementById("entrada_texto").value=" ";
 }
 
 
-function btnDesEncriptar(){
-        const desencriptar= document.getElementById ("campo1").value;
+function botonDesencriptar(){
+        const desencriptar= document.getElementById ("entrada_texto").value;
         const desencriptado= desencriptar.replace(/ai/gi, 'a').replace(/enter/gi, 'e').replace(/imes/gi, 'i').replace(/ober/gi, 'o').replace(/ufat/gi, 'u');
-        document.getElementById("campo2").value = desencriptado
-        document.getElementById("campo1").value=" ";
+        document.getElementById("salida_texto").value = desencriptado
+        document.getElementById("entrada_texto").value=" ";
 }

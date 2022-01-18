@@ -8,23 +8,22 @@
     <title>Primer Challenge Oracle + Alura LATAM</title>
 </head>
 <body>
-
     <h1 class="titulo_principal">Código Secreto</h1>
     <section class="formularios">
         <div class="form_encriptar">
             <label for="input-texto"><h2>Ingrese el texto a encriptar</h2></label>
-            <textarea id="campo1" name="textarea" rows="10" cols="50" onchange="this.value=this.value.toLowerCase();" placeholder="solo letras minusculas, sin acento ni caracteres especiales..."></textarea>
+            <textarea id="entrada_texto" name="textarea" rows="10" cols="50" onchange="this.value=this.value.toLowerCase();" placeholder="solo letras minusculas, sin acento ni caracteres especiales..."></textarea>
             <br>
-            <button class="btn_1" onclick="btnEncriptar()">Encriptar!</button>
-            <button class="btn_2" onclick="btnDesEncriptar()">Desencriptar!</button>
+            <button class="boton_izquierdo" onclick="botonEncriptar()">Encriptar!</button>
+            <button class="boton_derecho" onclick="botonDesencriptar()">Desencriptar!</button>
         </div>
     
         <div class="form-desencriptar">
             <label for="output-texto"><h2 id="titulo-desencriptar">Mensaje encriptado</h2></label>
-            <textarea id="campo2" name="textarea" rows="10" cols="50" onchange="this.value=this.value.toLowerCase();" placeholder="escriba algo aqui..."></textarea>
+            <textarea id="salida_texto" name="textarea" rows="10" cols="50" onchange="this.value=this.value.toLowerCase();" placeholder="escriba algo aqui..."></textarea>
             <br>
-            <button class="btn_1" onclick="btnCopiar()">Copiar!</button>
-            <button class="btn_2" onclick="btnPegar()">Copiar y Pegar!</button>
+            <button class="boton_izquierdo" onclick="botonCopiar()">Copiar!</button>
+            <button class="boton_derecho" onclick="botonPegar()">Copiar y Pegar!</button>
         </div>
     </section>
 
